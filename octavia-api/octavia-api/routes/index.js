@@ -1,9 +1,6 @@
-﻿var express = require('express');
-var router = express.Router();
-
-/* GET home page. */
-router.get('/', function (req, res) {
-    res.json({ msg: 'Hello World!' });
-});
-
-module.exports = router;
+﻿
+module.exports = {
+    init: function (express, app){
+        app.use('/', require('../routes/content')(express.Router()));
+    }
+};

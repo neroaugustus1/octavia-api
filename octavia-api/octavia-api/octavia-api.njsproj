@@ -31,7 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
-    <Compile Include="routes\index.js" />
+    <Compile Include="routes\content.js" />
+    <Compile Include="routes\index.js">
+      <Publish>True</Publish>
+    </Compile>
     <Compile Include="bin\www" />
     <Content Include="package.json" />
     <Content Include="README.md" />
